@@ -2,7 +2,18 @@ import SwiftUI
 
 struct SplashView: View {
     var body: some View {
-        Text("Welcome to Evercode!")
+        VStack {
+            Image("EvercodeLogo")
+                .resizable()
+                .frame(width: 100, height: 100)
+            
+            Text("Welcome to Evercode!")
+                .padding(16)
+                .font(.title)
+                .font(.system(size: 10, weight: .semibold))
+            
+            ProgressView()
+        }
     }
 }
 
